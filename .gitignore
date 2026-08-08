@@ -1,6 +1,4 @@
 # Keil outputs
-Objects/
-Listings/
 DebugConfig/
 *.axf
 *.bin
@@ -34,3 +32,56 @@ Desktop.ini
 *.pfx
 *.jks
 *.keystore
+
+# Keil、CCS 与本地构建产物
+[Oo]bjects/
+[Ll]istings/
+Debug/
+Release/
+build/
+out/
+*.elf
+*.out
+*.su
+*.obj
+*.bak
+*.scvd.tmp
+
+# 原始 EDA 工程、网表和制板输出
+[Ee][Dd][Aa]/
+[Gg]erber*/
+[Pp]roject [Oo]utputs*/
+*.[Ee][Pp][Rr][Oo]
+*.[Ee][Pp][Rr][Oo]2
+*.esch
+*.epcb
+*.enet
+*.kicad_*
+*.[Ss][Cc][Hh][Dd][Oo][Cc]
+*.[Pp][Cc][Bb][Dd][Oo][Cc]
+*.[Pp][Rr][Jj][Pp][Cc][Bb]
+*.[Ss][Cc][Hh][Ll][Ii][Bb]
+*.[Pp][Cc][Bb][Ll][Ii][Bb]
+*.sch
+*.brd
+*.pcb
+*.net
+*.gbr
+*.ger
+*.gbl
+*.gtl
+*.gbo
+*.gto
+*.gbs
+*.gts
+*.gm1
+*.drl
+*.zip
+*.7z
+*.rar
+
+# 只收录当前目标实际链接的静态库
+*.a
+*.lib
+!/source/ti/driverlib/lib/keil/m0p/mspm0g1x0x_g3x0x/driverlib.a
+!/vehicle-2/project/zf_device/zf_device_config.lib
